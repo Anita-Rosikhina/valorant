@@ -130,6 +130,7 @@
 
 .top-line {
     display: flex;
+    margin: 0 0 55px;
 }
 
 .name {
@@ -199,4 +200,75 @@
 .name-4 {
     -webkit-text-stroke-color: #000;
     -webkit-text-stroke-width: 2px;
+}
+
+.bottom-line {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.card-skill {
+    width: 470px;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.play {
+    width: 140px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.skill-icon {
+    width: 120px;
+    height: 120px;
+    background: #FF4656;
+    position: relative;
+}
+
+.skill-icon img {
+    width: 110px;
+    position: absolute;
+    bottom: 28%;
+    left: 32%;
+}
+
+.info-skill-title {
+    color: #c4c4c4;
+    font-family: "Druk Wide Medium", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.info-skill-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-skill-text :nth-child(1) {
+    font-size: 20px;
+    font-family: "Druk Wide Medium", sans-serif;
+    margin: 0 0 7px
+}
+
+.info-skill-text :nth-child(2) {
+    color: #1F2326;
+    font-size: 17px;
+    font-family: Montserrat, sans-serif;
+}
+
+.info-skill {
+    display: flex;
+    margin: 0 22px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
