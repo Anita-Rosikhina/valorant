@@ -21,6 +21,7 @@
 
 .header-left-block {
     display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -447,5 +448,124 @@
 
     .agent-info {
         right: 140px;
+    }
+}
+
+@media (max-width: 1280px) {
+ .block-name-cards {
+     display: none;
+ }
+
+  .block-agents {
+      justify-content: space-evenly;
+      width: 100%;
+  }
+
+  .card {
+      margin: 0;
+      width: 17vw;
+      height: 500px;
+  }
+
+  .skills {
+      height: 70px;
+      width: 17vw;
+  }
+
+  .card-skill {
+      width: 300px;
+      height: 95px;
+  }
+
+  .play {
+      width: 95px;
+      height: 95px;
+  }
+
+  .user-name {
+      font-size: 12px;
+  }
+
+  .user-icon {
+      width: 35px;
+  }
+
+  .logo img {
+      width: 60px;
+  }
+
+  .nav {
+      width: 570px;
+      font-size: 10px;
+  }
+
+  .header-icon {
+      margin: 0 52px 0 0;
+  }
+
+  .header-icon img {
+      width: 35px;
+  }
+
+  .line {
+      margin:  0 22px;
+  }
+}
+
+@media (max-width: 1000px){
+    .card-skill {
+        width: 250px;
+        height: 80px;
+    }
+
+    .info-skill-text :nth-child(2){
+        display: none;
+    }
+
+    .skill-icon img {
+        left: 21px;
+        width: 53px;
+    }
+
+    .card {
+        height: 400px;
+    }
+
+    .skills img {
+        width: 30px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .user-name {
+        font-size: 9px;
+    }
+
+    .arrow {
+        width: 6px;
+        margin: 0 0 0 9px;
+    }
+
+    .user-icon {
+        width: 29px;
+    }
+
+    .play {
+        width: 80px;
+        height: 80px;
+    }
+
+    .play img {
+        width: 7px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .country {
+        font-size: 15px;
     }
 }
