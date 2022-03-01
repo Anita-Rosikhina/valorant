@@ -9,8 +9,9 @@
 .header {
     background: #1F2326;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    height: 132px;
+    height: 13vh;
     padding: 46px 66px 46px 78px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -67,7 +68,7 @@
 }
 
 .content {
-    height: calc( 100vh - 132px - 132px);
+    height: calc( 100vh - 13vh - 13vh);
     background-image: url("./assets/background/background.png");
     background-color: rgb(249 37 55 / 90%);
     padding: 60px 0;
@@ -75,7 +76,7 @@
 
 .footer {
     background: #fff;
-    height: 132px;
+    height: 13vh;
 }
 
 .block-name-cards {
@@ -126,10 +127,12 @@
     background-size: cover;
     padding: 40px 0 0 0;
     position: relative;
+    background-position: center;
 }
 
 .top-line {
     display: flex;
+    justify-content: space-between;
     margin: 0 0 30px;
 }
 
@@ -271,4 +274,178 @@
     height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+@media (max-width: 1880px) {
+    .card {
+        width: 14vw;
+        margin: 0 120px 0 0;
+    }
+
+    .block-name-cards {
+        width: 7vw;
+        margin: 0px 100px 0 60px;
+    }
+
+    .name-cards {
+        font-size: 100px;
+    }
+
+    .skills {
+        width: 14vw;
+    }
+
+    .agent-info {
+        right: 200px;
+    }
+
+    .top-line {
+        margin: 0 0 75px;
+    }
+
+    .card-skill {
+        width: 400px;
+    }
+
+    .skill-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info-skill-title {
+        font-size: 20px;
+    }
+
+    .info-skill-text :nth-child(2) {
+        font-size: 16px;
+    }
+
+    .info-skill-text :nth-child(2) {
+        font-size: 14px;
+    }
+
+    .skill-icon img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 1724px) {
+    .block-name-cards {
+        flex-direction: column;
+    }
+
+    .name-cards {
+        font-size: 90px;
+        margin: 15px 0 0;
+    }
+
+    .top-line {
+        justify-content: center;
+        margin: 0 0 40px;
+    }
+
+    .card {
+        margin: 0 70px 0 0;
+    }
+
+    .agent-info {
+        right: 175px;
+    }
+
+    .skills img {
+        width: 40px;
+    }
+
+    .header {
+        height: 10vh;
+    }
+
+
+    .footer {
+        height: 10vh;
+    }
+
+    .content {
+        height: calc(100vh - 10vh - 10vh);
+        padding: 40px 0 0;
+    }
+}
+
+@media (max-width: 1555px){
+    .header {
+        justify-content: center;
+    }
+
+    .header-right-block {
+        margin: 0 0 0 40px;
+    }
+
+    .line {
+        margin: 0 38px;
+    }
+
+    .skill-icon img {
+        left: -11px;
+        width: 70px;
+    }
+
+    .nav {
+        width: 770px;
+    }
+
+    .card-skill {
+        width: 320px;
+        height: 110px;
+    }
+
+    .card {
+        height: 550px;
+    }
+
+    .play {
+        width: 110px;
+        height: 110px;
+    }
+
+    .name-cards {
+        font-size: 65px;
+        margin: 12px 0 0;
+    }
+
+    .block-name-cards-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .name {
+        font-size: 50px;
+    }
+
+    .skill-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .info-skill-text :nth-child(2) {
+        font-size: 11px;
+    }
+
+    .info-skill-text :nth-child(1) {
+        font-size: 13px;
+    }
+
+    .info-skill-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .nav {
+        width: 680px;
+        font-size: 11px;
+    }
+
+    .agent-info {
+        right: 140px;
+    }
 }
