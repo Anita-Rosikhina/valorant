@@ -277,7 +277,12 @@
     justify-content: space-evenly;
 }
 
-@media (max-width: 1880px) {
+.icon-menu {
+    display: none;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1880px) {
     .card {
         width: 14vw;
         margin: 0 120px 0 0;
@@ -330,7 +335,7 @@
     }
 }
 
-@media (max-width: 1724px) {
+@media screen and (max-width: 1724px) {
     .block-name-cards {
         flex-direction: column;
     }
@@ -372,7 +377,7 @@
     }
 }
 
-@media (max-width: 1555px){
+@media screen and (max-width: 1555px){
     .header {
         justify-content: center;
     }
@@ -440,7 +445,7 @@
     }
 }
 
-@media (max-width: 1350px) {
+@media screen and (max-width: 1350px) {
     .nav {
         width: 680px;
         font-size: 11px;
@@ -451,7 +456,7 @@
     }
 }
 
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
  .block-name-cards {
      display: none;
  }
@@ -512,13 +517,13 @@
   }
 }
 
-@media (max-width: 1000px){
+@media screen and (max-width: 1000px){
     .card-skill {
         width: 250px;
         height: 80px;
     }
 
-    .info-skill-text :nth-child(2){
+    .info-skill-text:nth-child(2){
         display: none;
     }
 
@@ -567,5 +572,22 @@
 
     .country {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .icon-menu {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+
+    .header-right-block {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
     }
 }
