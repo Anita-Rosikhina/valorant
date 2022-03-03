@@ -276,6 +276,36 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+.dropdown-item {
+    text-decoration: none;
+    color: #FF4656;
+}
+
+.dropdown {
+    display: none;
+    position: relative;
+    list-style: none;
+
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: -153px;
+    background: #fff;
+    width: 250px;
+    z-index: 5;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 340px;
+    padding: 0 10px;
+    justify-content: space-evenly;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: flex;
+}
 
 .icon-menu {
     display: none;
@@ -603,6 +633,10 @@
 
     .skill-icon img {
         left: 10px;
+    }
+
+    .dropdown {
+        display: block;
     }
 }
 
