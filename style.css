@@ -66,7 +66,7 @@
 }
 
 .content {
-    height: calc( 100vh - 13vh - 13vh);
+    height: 100%;
     background-image: url("./assets/background/background.png");
     background-color: rgb(249 37 55 / 90%);
     padding: 60px 0;
@@ -217,6 +217,8 @@
     align-items: flex-end;
     background-color: #fff;
     border: 1px solid #000;
+    flex: 1;
+    margin: 0 20px 0 0;
 }
 
 .play {
@@ -287,7 +289,7 @@
 
     .block-name-cards {
         width: 7vw;
-        margin: 0px 100px 0 60px;
+        margin: 0 100px 0 60px;
     }
 
     .name-cards {
@@ -306,9 +308,6 @@
         margin: 0 0 75px;
     }
 
-    .card-skill {
-        width: 400px;
-    }
 
     .skill-icon {
         width: 100px;
@@ -369,7 +368,6 @@
     }
 
     .content {
-        height: calc(100vh - 10vh - 10vh);
         padding: 40px 0 0;
     }
 }
@@ -397,7 +395,6 @@
     }
 
     .card-skill {
-        width: 320px;
         height: 110px;
     }
 
@@ -474,7 +471,6 @@
   }
 
   .card-skill {
-      width: 300px;
       height: 95px;
   }
 
@@ -515,11 +511,10 @@
 
 @media screen and (max-width: 1000px){
     .card-skill {
-        width: 250px;
         height: 80px;
     }
 
-    .info-skill-text:nth-child(2){
+    .text {
         display: none;
     }
 
@@ -562,10 +557,6 @@
         width: 7px;
     }
 
-    .name {
-        font-size: 40px;
-    }
-
     .country {
         font-size: 15px;
     }
@@ -604,5 +595,58 @@
 
     .header {
         justify-content: space-between;
+    }
+
+    .card-skill {
+        margin: 0 10px 0 0;
+    }
+
+    .skill-icon img {
+        left: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .agent-info {
+        right: 222px;
+    }
+
+    .play {
+        display: none;
+    }
+}
+
+@media (max-width: 795px) {
+    .agent-info {
+        right: 194px;
+    }
+}
+
+@media (max-width: 700px) {
+    .agent-info {
+        right: 265px;
+    }
+
+    .card {
+        width: 45vw;
+        height: 370px;
+        margin: 0 30px 50px;
+    }
+
+    .bottom-line {
+        flex-wrap: wrap;
+    }
+
+    .card-skill {
+        flex: none;
+        width: 250px;
+        margin: 0 100px 10px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 635px) {
+    .agent-info {
+        right: 242px;
     }
 }
