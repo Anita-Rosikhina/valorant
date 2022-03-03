@@ -24,9 +24,6 @@
     align-items: center;
 }
 
-.logo {
-    width: 79px;
-}
 
 .header-icon {
     margin: 0 86px 0 0;
@@ -129,6 +126,7 @@
     padding: 40px 0 0 0;
     position: relative;
     background-position: center;
+    flex: 1;
 }
 
 .top-line {
@@ -284,8 +282,7 @@
 
 @media screen and (max-width: 1880px) {
     .card {
-        width: 14vw;
-        margin: 0 120px 0 0;
+        margin: 0 60px 0 0;
     }
 
     .block-name-cards {
@@ -351,7 +348,7 @@
     }
 
     .card {
-        margin: 0 70px 0 0;
+        margin: 0 40px 0 0;
     }
 
     .agent-info {
@@ -467,8 +464,7 @@
   }
 
   .card {
-      margin: 0;
-      width: 17vw;
+      margin: 0 30px;
       height: 500px;
   }
 
@@ -573,12 +569,31 @@
     .country {
         font-size: 15px;
     }
-}
 
-@media screen and (max-width: 900px){
+    .card {
+        flex: none;
+        width: 30vw;
+        height: 350px;
+        background-position: top;
+        margin: 0 30px 45px;
+    }
+
+    .block-agents {
+        flex-wrap: wrap;
+    }
+
+    .agent-info {
+        right: 252px;
+    }
+
+    .skills {
+        width: inherit;
+    }
+
     .icon-menu {
         display: block;
     }
+
     .nav {
         display: none;
     }
