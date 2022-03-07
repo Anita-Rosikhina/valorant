@@ -161,7 +161,7 @@
 }
 
 .skills {
-    width: 17vw;
+    width: inherit;
     height: 90px;
     background: #1F2326;
     border: 2px solid #fff;
@@ -326,10 +326,6 @@
         font-size: 100px;
     }
 
-    .skills {
-        width: 14vw;
-    }
-
     .top-line {
         margin: 0 0 75px;
     }
@@ -485,7 +481,6 @@
 
   .skills {
       height: 70px;
-      width: 17vw;
   }
 
   .card-skill {
@@ -541,11 +536,6 @@
         width: 53px;
     }
 
-    /*.skills img {*/
-    /*    height: ;*/
-    /*    width: 30px;*/
-    /*}*/
-
     .logo img {
         width: 50px;
     }
@@ -569,7 +559,7 @@
     }
 
     .play img {
-        width: 7px;
+        width: 15px;
     }
 
     .country {
@@ -585,10 +575,6 @@
 
     .block-agents {
         flex-wrap: wrap;
-    }
-
-    .skills {
-        width: inherit;
     }
 
     .icon-menu {
@@ -608,7 +594,9 @@
     }
 
     .card-skill {
-        margin: 0 10px 0 0;
+        margin: 0 0 10px;
+        width: 40%;
+        flex: none;
     }
 
     .skill-icon img {
@@ -618,11 +606,15 @@
     .dropdown {
         display: block;
     }
-}
 
-@media (max-width: 900px) {
     .play {
-        display: none;
+        width: 40%;
+    }
+
+    .bottom-line {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 50px;
     }
 }
 
@@ -632,14 +624,11 @@
         margin: 0 30px 50px;
     }
 
-    .bottom-line {
-        flex-wrap: wrap;
+    .info-skill-text :nth-child(1) {
+        font-size: 11px;
     }
 
-    .card-skill {
-        flex: none;
-        width: 250px;
-        margin: 0 100px 10px;
-        justify-content: space-between;
+    .info-skill-title {
+        font-size: 12px;
     }
 }
