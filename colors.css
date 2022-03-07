@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #fff;
+}
+
+:root {
+    --second-color: #000;
+}
+
+:root {
+    --third-color: #FF4656;
+}
+
+:root {
+    --primary-color-700: #1F2326;
+}
+
+:root {
+    --primary-color-700-transparent: rgb(31 35 38 / 60%);
+}
+
+:root {
+    --main-bg: rgb(249 37 55 / 90%);
+}
+
+:root {
+    --fourth-color: #c4c4c4;
+}
