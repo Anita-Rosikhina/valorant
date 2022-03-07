@@ -157,7 +157,7 @@
 .agent-info {
     display: flex;
     position: absolute;
-    right: 272px;
+    left: -30px;
 }
 
 .skills {
@@ -330,10 +330,6 @@
         width: 14vw;
     }
 
-    .agent-info {
-        right: 200px;
-    }
-
     .top-line {
         margin: 0 0 75px;
     }
@@ -378,10 +374,6 @@
 
     .card {
         margin: 0 40px 0 0;
-    }
-
-    .agent-info {
-        right: 175px;
     }
 
     .skills img {
@@ -473,10 +465,6 @@
     .nav {
         width: 680px;
         font-size: 11px;
-    }
-
-    .agent-info {
-        right: 140px;
     }
 }
 
@@ -603,10 +591,6 @@
         flex-wrap: wrap;
     }
 
-    .agent-info {
-        right: 252px;
-    }
-
     .skills {
         width: inherit;
     }
@@ -641,26 +625,12 @@
 }
 
 @media (max-width: 900px) {
-    .agent-info {
-        right: 222px;
-    }
-
     .play {
         display: none;
     }
 }
 
-@media (max-width: 795px) {
-    .agent-info {
-        right: 194px;
-    }
-}
-
 @media (max-width: 700px) {
-    .agent-info {
-        right: 265px;
-    }
-
     .card {
         width: 45vw;
         height: 370px;
@@ -676,11 +646,5 @@
         width: 250px;
         margin: 0 100px 10px;
         justify-content: space-between;
-    }
-}
-
-@media (max-width: 635px) {
-    .agent-info {
-        right: 242px;
     }
 }
