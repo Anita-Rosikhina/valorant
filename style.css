@@ -119,7 +119,7 @@
 
 .card {
     width: 17vw;
-    height: 500px;
+    height: 680px;
     background-color: #1F2326;
     margin: 0 45px 0 0;
     background-size: cover;
@@ -377,7 +377,8 @@
     }
 
     .skills img {
-        width: 40px;
+        height: 30px;
+        width: auto;
     }
 
     .header {
@@ -418,6 +419,10 @@
 
     .card-skill {
         height: 110px;
+    }
+
+    .card {
+        height: 500px;
     }
 
     .play {
@@ -536,9 +541,10 @@
         width: 53px;
     }
 
-    .skills img {
-        width: 30px;
-    }
+    /*.skills img {*/
+    /*    height: ;*/
+    /*    width: 30px;*/
+    /*}*/
 
     .logo img {
         width: 50px;
