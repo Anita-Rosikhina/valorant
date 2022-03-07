@@ -207,7 +207,6 @@
 .bottom-line {
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
 }
 
 .card-skill {
