@@ -74,11 +74,6 @@
     padding: 60px 0;
 }
 
-.footer {
-    background-color: var(--primary-color);
-    height: 13vh;
-}
-
 .block-name-cards {
     width: 11%;
     display: flex;
