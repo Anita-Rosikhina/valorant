@@ -9,7 +9,6 @@
 }
 
 .header {
-    background-color: var(--primary-color-700);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,6 +18,7 @@
     text-transform: uppercase;
     font-weight: 700;
     color: var(--primary-color);
+    background-color: var(--primary-color-700);
 }
 
 .header-left-block {
@@ -34,16 +34,16 @@
 .line {
     height: 42px;
     width: 2px;
-    background-color: var(--primary-color);
     margin: 0 60px;
+    background-color: var(--primary-color);
 }
 
 .nav {
-    width: 920px;
     display: flex;
     align-items: center;
-    font-size: 14px;
     justify-content: space-between;
+    width: 920px;
+    font-size: 14px;
 }
 
 .nav-arrow {
@@ -58,8 +58,8 @@
 
 .user-icon {
     width: 42px;
-    border-radius: 50%;
     margin: 0 16px 0 0;
+    border-radius: 50%;
 }
 
 .arrow {
@@ -69,30 +69,30 @@
 
 .content {
     height: 100%;
+    padding: 60px 0;
     background-image: url("./assets/background/background.png");
     background-color: var(--main-bg);
-    padding: 60px 0;
 }
 
 .block-name-cards {
-    width: 11%;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    width: 11%;
+    margin: 0 100px;
     padding: 0 0 27px 0;
     border-bottom: 8px solid var(--primary-color-700-transparent);
-    margin: 0 100px;
 }
 
 .block-name-cards-icon {
-    width: 80px;
-    height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--primary-color-700-transparent);
+    width: 80px;
+    height: 80px;
     margin: 0 0 20px 0;
+    background: var(--primary-color-700-transparent);
 }
 
 .block-name-cards-icon img {
@@ -115,15 +115,15 @@
 }
 
 .card {
+    position: relative;
+    flex: 1;
     width: 17vw;
     height: 680px;
-    background-color: var(--primary-color-700);
     margin: 0 45px 0 0;
-    background-size: cover;
     padding: 40px 0 0 0;
-    position: relative;
+    background-size: cover;
     background-position: center;
-    flex: 1;
+    background-color: var(--primary-color-700);
 }
 
 .top-line {
@@ -158,16 +158,16 @@
 }
 
 .skills {
+    position: absolute;
+    bottom: -35px;
+    left: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: inherit;
     height: 90px;
     background-color: var(--primary-color-700);
     border: 2px solid var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    position: absolute;
-    bottom: -35px;
-    left: 22px;
 }
 
 .agent-1 {
@@ -207,45 +207,19 @@
 }
 
 .card-skill {
+    display: flex;
     width: 470px;
     height: 150px;
-    display: flex;
-    align-items: flex-end;
-    background-color: var(--primary-color);
-    border: 1px solid var(--second-color);
-    flex: 1;
     margin: 0 20px 0 0;
-}
-
-.play {
-    width: 140px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--primary-color);
     border: 1px solid var(--second-color);
-}
-
-.skill-icon {
-    width: 120px;
-    height: 120px;
-    background-color: var(--third-color);
-    position: relative;
-}
-
-.skill-icon img {
-    width: 110px;
-    position: absolute;
-    bottom: 28%;
-    left: 32%;
+    background-color: var(--primary-color);
 }
 
 .info-skill-title {
-    color: var(--fourth-color);
-    font-family: "Druk Wide Medium", sans-serif;
     font-size: 30px;
+    font-family: "Druk Wide Medium", sans-serif;
     text-transform: uppercase;
+    color: var(--fourth-color);
 }
 
 .info-skill-text {
@@ -266,12 +240,46 @@
 }
 
 .info-skill {
+    flex: 3;
     display: flex;
-    margin: 0 22px;
-    height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 100%;
+    padding: 0 22px;
 }
+
+.skill-icon {
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.skill-icon-box {
+    width: 120px;
+    height: 120px;
+    background-color: var(--third-color);
+}
+
+.skill-icon-box img {
+    height: 100%;
+    width: auto;
+    max-height: 100px;
+    transform: translate(25%, -25%);
+}
+
+
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 150px;
+    border: 1px solid var(--second-color);
+    background: var(--primary-color);
+}
+
 .dropdown-item {
     text-decoration: none;
     color: var(--third-color);
@@ -281,7 +289,6 @@
     display: none;
     position: relative;
     list-style: none;
-
 }
 
 .dropdown-menu {
@@ -289,14 +296,14 @@
     position: absolute;
     top: 45px;
     left: -153px;
-    background-color: var(--primary-color);
-    width: 250px;
-    z-index: 5;
     flex-direction: column;
     align-items: flex-end;
-    height: 340px;
-    padding: 0 10px;
     justify-content: space-evenly;
+    width: 250px;
+    height: 340px;
+    z-index: 5;
+    padding: 0 10px;
+    background-color: var(--primary-color);
 }
 
 .dropdown:hover .dropdown-menu{
@@ -327,7 +334,7 @@
     }
 
 
-    .skill-icon {
+    .skill-icon-box {
         width: 100px;
         height: 100px;
     }
@@ -342,10 +349,6 @@
 
     .info-skill-text :nth-child(2) {
         font-size: 14px;
-    }
-
-    .skill-icon img {
-        width: 100px;
     }
 }
 
@@ -400,11 +403,6 @@
         margin: 0 38px;
     }
 
-    .skill-icon img {
-        left: -11px;
-        width: 70px;
-    }
-
     .nav {
         width: 770px;
     }
@@ -436,9 +434,9 @@
         font-size: 50px;
     }
 
-    .skill-icon {
-        width: 70px;
-        height: 70px;
+    .skill-icon-box {
+        width: 60px;
+        height: 60px;
     }
 
     .info-skill-text :nth-child(2) {
@@ -462,74 +460,69 @@
 }
 
 @media screen and (max-width: 1280px) {
- .block-name-cards {
-     display: none;
- }
+    .block-name-cards {
+        display: none;
+    }
 
-  .block-agents {
-      justify-content: space-evenly;
-      width: 100%;
-  }
+    .block-agents {
+        justify-content: space-evenly;
+        width: 100%;
+    }
 
-  .card {
-      margin: 0 30px;
-  }
+    .card {
+        margin: 0 30px;
+    }
 
-  .skills {
-      height: 70px;
-  }
+    .skills {
+        height: 70px;
+    }
 
-  .card-skill {
-      height: 95px;
-  }
+    .card-skill {
+        height: 95px;
+    }
 
-  .play {
-      width: 95px;
-      height: 95px;
-  }
+    .play {
+        width: 95px;
+        height: 95px;
+    }
 
-  .user-name {
-      font-size: 12px;
-  }
+    .user-name {
+        font-size: 12px;
+    }
 
-  .user-icon {
-      width: 35px;
-  }
+    .user-icon {
+        width: 35px;
+    }
 
-  .logo img {
-      width: 60px;
-  }
+    .logo img {
+        width: 60px;
+    }
 
-  .nav {
-      width: 570px;
-      font-size: 10px;
-  }
+    .nav {
+        width: 570px;
+        font-size: 10px;
+    }
 
-  .header-icon {
-      margin: 0 52px 0 0;
-  }
+    .header-icon {
+        margin: 0 52px 0 0;
+    }
 
-  .header-icon img {
-      width: 35px;
-  }
+    .header-icon img {
+        width: 35px;
+    }
 
-  .line {
-      margin:  0 22px;
-  }
+    .line {
+        margin:  0 22px;
+    }
+
+    .info-skill-text :nth-child(2) {
+        font-size: 7px;
+    }
 }
 
 @media screen and (max-width: 1000px){
     .card-skill {
         height: 80px;
-    }
-
-    .text {
-        display: none;
-    }
-
-    .skill-icon img {
-        left: 21px;
-        width: 53px;
     }
 
     .logo img {
@@ -595,10 +588,6 @@
         flex: none;
     }
 
-    .skill-icon img {
-        left: 10px;
-    }
-
     .dropdown {
         display: block;
     }
@@ -610,7 +599,24 @@
     .bottom-line {
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 0 50px;
+        padding: 0 105px;
+    }
+}
+
+@media (max-width: 820px) {
+    .skill-icon-box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .info-skill {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 770px) {
+    .bottom-line {
+        padding: 0 88px;
     }
 }
 
@@ -626,5 +632,18 @@
 
     .info-skill-title {
         font-size: 12px;
+    }
+
+    .info-skill {
+        flex: 4;
+    }
+
+    .skill-icon-box {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bottom-line {
+        padding: 0 50px;
     }
 }
